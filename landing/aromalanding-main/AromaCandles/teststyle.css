@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.slider{
+    min-height: 600px;
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+}
+
+.slide{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+}
+
+label{
+    border: grey 1px solid;
+    display: block;
+    width: 150px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.slide-one{
+    width: 100%;
+    background: url("img/luma-candles-B0G8xzwTVWc-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide-two{
+    width: 100%;
+    background:url("img/luma-candles-jQKeCGR7PL4-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide-three{
+    width: 100%;
+    background:url("img/luma-candles-59KYLY3vSJk-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide-four{
+    width: 100%;
+    background:url("img/svitlana-P8l7cPKzcek-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+input{
+    display: none;
+}
+
+.buttons{
+    display: flex;
+    position: absolute;
+    top:97%;
+}
+
+.buttons >label:hover{
+    opacity: 90%;
+    transform: scale(1.1);
+}
+
+[id^='slide']:checked +.slide{
+    opacity: 1;
+    transition: opacity 2s;
+    transform: scale(1.1);
+}
+
+
+
+
+
